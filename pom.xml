@@ -220,16 +220,7 @@
             <build>
                 <plugins>
 			<plugin>
-   <groupId>org.wildfly.plugins</groupId>
-   <artifactId>wildfly-maven-plugin</artifactId>
-   <version>1.0.2.Final</version>
-   <configuration>
-      <hostname>${hostname}</hostname>
-      <port>9990</port>
-      <username>administrator</username>
-      <password>Password1!</password>
-   </configuration>
-</plugin>
+   
                     <!-- CHECKSTYLE -->
                     <!--<plugin>-->
                         <!--<artifactId>maven-checkstyle-plugin</artifactId>-->
@@ -262,6 +253,16 @@
                             <failurePriority>2</failurePriority>
                         </configuration>
                     </plugin>
+				<groupId>org.wildfly.plugins</groupId>
+   <artifactId>wildfly-maven-plugin</artifactId>
+   <version>1.0.2.Final</version>
+   <configuration>
+      <hostname>${hostname}</hostname>
+      <port>9990</port>
+      <username>administrator</username>
+      <password>Password1!</password>
+   </configuration>
+</plugin>
 
                     <!-- FINDBUGS -->
                     <plugin>
