@@ -252,7 +252,7 @@
                             <failOnViolation>true</failOnViolation>
                             <failurePriority>2</failurePriority>
                         </configuration>
-                    </plugin>
+                    
 				
 
                     <!-- FINDBUGS -->
